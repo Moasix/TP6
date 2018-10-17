@@ -1,5 +1,4 @@
 <?php
-
     // Un article en vente
     class Article {
         public $ref;       // Référence unique
@@ -7,6 +6,6 @@
         public $categorie; // identifiant de catégorie
         public $prix;      // le prix
         public $image;     // Nom du fichier image
+        public $description;
     }
-
 ?>
