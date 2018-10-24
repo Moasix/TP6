@@ -11,12 +11,14 @@ $arrayCategorie = $dao->getAllCat();
       <link rel="stylesheet" type="text/css" href="styleMusique.css" />
     </head>
     <body>
-      <!-- affichage des jeux-->
+      <?php  include('../view/header_include.view.php') ?>
+
       <?php foreach ($games as $key => $value) { ?>
         <a href="../controler/jeu.ctrl.php/?ref=<?=$value->ref?>">
           <img src="../data/covers/<?=$value->image?>" alt="">
         </a>
       <?php } ?>
+
 
     </body>
 </html>
