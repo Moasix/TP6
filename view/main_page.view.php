@@ -7,17 +7,17 @@ $arrayCategorie = $dao->getAllCat();
 <html lang="fr" dir="ltr">
     <head>
       <meta charset="utf-8">
-      <title>Juk Zik</title>
-      <link rel="stylesheet" type="text/css" href="../view/stylemain_page.css" />
+      <title>PC Master Race</title>
+      <link rel="stylesheet" type="text/css" href="styleMusique.css" />
     </head>
     <body>
+      <?php  include('../view/header_include.view.php') ?>
 
-<?php  include('../view/header_include.view.php') ?>
-
-
-
-      <h1>Jukebox</h1>
-
+      <?php foreach ($games as $key => $value) { ?>
+        <a href="../jeu.ctrl.php/?ind=<?=$value->ref?>">
+          <img src="../data/covers/<?=$value->image?>" alt="">
+        </a>
+      <?php } ?>
 
 
     </body>

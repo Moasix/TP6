@@ -8,15 +8,9 @@
 
 
     class DAO {
-        // L'objet local PDO de la base de donnée
         private $db;
-        // Le type, le chemin et le nom de la base de donnée
         private $database = 'sqlite:../data/db/database.db';
-        // Constructeur chargé d'ouvrir la BD
         function __construct() {
-            ///////////////////////////////////////////////////////
-            //  A COMPLETER
-            ///////////////////////////////////////////////
             try {
                 $this->db = new PDO($this->database);
             } catch (\Exception $e) {
@@ -25,29 +19,15 @@
         }
 
 
-        // Accès à toutes les catégories
-        // Retourne une table d'objets de type Categorie
         function getAllCat() : array {
-            ///////////////////////////////////////////////////////
-            //  A COMPLETER
-            ///////////////////////////////////////////////////////
             $b = $this->db->query("SELECT * FROM categorie");
             $array = $b->fetchAll(PDO::FETCH_CLASS, 'Categorie');
             return $array;
         }
 
-
-
-        // Accès aux n premiers articles
-        // Cette méthode retourne un tableau contenant les n permier articles de
-        // la base sous la forme d'objets de la classe Article.
         function firstN(int $n) : array {
-            ///////////////////////////////////////////////////////
-            //  A COMPLETER
-            ///////////////////////////////////////////////
-
-            $b = $this->db->query("SELECT * FROM article LIMIT $n");
-            $array = $b->fetchAll(PDO::FETCH_CLASS, 'Article');
+            $b = $this->db->query("SELECT * FROM jeux LIMIT $n");
+            $array = $b->fetchAll(PDO::FETCH_CLASS, 'Jeu');
             return $array;
         }
 
