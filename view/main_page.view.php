@@ -13,7 +13,7 @@
         <?php foreach ($games as $key => $value) { ?>
           <article>
             <h3><?=$value->titre?></h3>
-            <a href="../controler/jeu.ctrl.php/?ref=<?=$value->ref?>">
+            <a href="../controler/jeu.ctrl.php?ref=<?=$value->ref?>">
               <img src="../data/covers/<?=$value->image?>" alt="">
             </a>
             <p>Prix : <?=$value->prix?> €</p>
