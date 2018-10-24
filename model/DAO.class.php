@@ -31,7 +31,7 @@
             ///////////////////////////////////////////////////////
             //  A COMPLETER
             ///////////////////////////////////////////////////////
-            $b = $this->db->query("SELECT * FROM categories");
+            $b = $this->db->query("SELECT * FROM categorie");
             $array = $b->fetchAll(PDO::FETCH_CLASS, 'Categorie');
             return $array;
         }
