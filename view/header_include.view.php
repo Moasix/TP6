@@ -18,7 +18,7 @@
       <nav>
         <ul>
           <?php foreach ($arrayCategorie as $indiceCat => $valueCat) { ?>
-            <li><a href="#"><?= $valueCat->nom ?></a></li>
+            <li><a href="../controler/categorie.ctrl.php?cat=<?=$valueCat->id?>"><?= $valueCat->nom ?></a></li>
           <?php } ?>
         </ul>
       </nav>

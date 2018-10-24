@@ -25,6 +25,12 @@
             return $array;
         }
 
+        function getCat(int $id) : Categorie {
+            $b = $this->db->query("SELECT * FROM categorie where id = $id");
+            $array = $b->fetchAll(PDO::FETCH_CLASS, 'Categorie');
+            return $array[0];
+        }
+
         function getN(int $ref,int $n) : array {
             $b = $this->db->query("SELECT * FROM jeux where ref >= $ref order by ref LIMIT $n");
             $array = $b->fetchAll(PDO::FETCH_CLASS, 'Jeu');
@@ -37,8 +43,20 @@
           $array = $b->fetchAll(PDO::FETCH_CLASS, 'Jeu');
           return $array[0];
         }
-///////////////////////////:
-        // Acces à la référence qui suit la référence $ref dans l'ordre des références
+
+        function getNCat(Categorie $cat, int $ref,int $n) : array {
+            $b = $this->db->query("SELECT * FROM jeux where ref >= $ref and categorie = $cat->id order by ref LIMIT $n");
+            $array = $b->fetchAll(PDO::FETCH_CLASS, 'Jeu');
+            return $array;
+        }
+
+
+
+
+
+
+
+
         function next(int $ref) : int {
             ///////////////////////////////////////////////////////
             //  A COMPLETER
@@ -69,13 +87,7 @@ var_dump($array);
 
         // Acces à une catégorie
         // Retourne un objet de la classe Categorie connaissant son identifiant
-        function getCat(int $id): Categorie {
-            ///////////////////////////////////////////////////////
-            //  A COMPLETER
-            ///////////////////////////////////////////////////////
 
-            return new Categorie();
-        }
 
 
 
