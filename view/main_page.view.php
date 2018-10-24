@@ -8,6 +8,20 @@
     <body>
       <?php  include('../view/header_include.view.php') ?>
 
+<<<<<<< HEAD
+      <h2>GENRE ACTUEL</h2>
+      <div id="MAIN_CONTAINER">
+
+        <?php foreach ($games as $key => $value) { ?>
+          <article>
+            <h3><?=$value->titre?></h3>
+            <a href="../controler/jeu.ctrl.php/?ref=<?=$value->ref?>">
+              <img src="../data/covers/<?=$value->image?>" alt="">
+            </a>
+            <p>Prix : <?=$value->prix?> €</p>
+          </article>
+        <?php } ?>
+=======
       <div id="divCONTAINER">
 
 
@@ -23,6 +37,7 @@
       <div class="">
 
       </div>
+>>>>>>> fc0b9947f19a171684a6995ab2bdf2a6c00cb59c
 
       </div>
       <?php  include('../view/footer_include.view.php') ?>
