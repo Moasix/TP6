@@ -7,12 +7,7 @@
     </head>
     <body>
       <?php  include('../view/header_include.view.php') ?>
-
-<<<<<<< HEAD
-=======
-
->>>>>>> a1d36cb9e7dc917f9b42af8423b12e76c5f4fe6a
-      <h2>GENRE ACTUEL</h2>
+  <h2>GENRE ACTUEL</h2>
       <div id="MAIN_CONTAINER">
 
         <?php foreach ($games as $key => $value) { ?>
@@ -23,12 +18,7 @@
             </a>
             <p>Prix : <?=$value->prix?> €</p>
           </article>
-        <?php } ?>
-<<<<<<< HEAD
-
-=======
->>>>>>> a1d36cb9e7dc917f9b42af8423b12e76c5f4fe6a
-      </div>
+        <?php } ?></div>
       <?php  include('../view/footer_include.view.php') ?>
     </body>
 </html>
