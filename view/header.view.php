@@ -1,9 +1,9 @@
 <?php
 require_once('../model/DAO.class.php');
-$arrayCategorie = getAllCat();
+$arrayCategorie = $dao->getAllCat();
 
-foreach($arrayCategorie as $uneCat){
-  var_dump($uneCat->nom);
+foreach($arrayCategorie as $indice => $uneCat){
+  var_dump($uneCat);
 }
 ?>
 
