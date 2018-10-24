@@ -25,25 +25,19 @@
             return $array;
         }
 
-        function firstN(int $n) : array {
-            $b = $this->db->query("SELECT * FROM jeux LIMIT $n");
+        function getN(int $ref,int $n) : array {
+            $b = $this->db->query("SELECT * FROM jeux where ref >= $ref order by ref LIMIT $n");
             $array = $b->fetchAll(PDO::FETCH_CLASS, 'Jeu');
             return $array;
-        }
-
-        // Acces au n articles à partir de la reférence $ref
-        // Cette méthode retourne un tableau contenant n  articles de
-        // la base sous la forme d'objets de la classe Article.
-        function getN(int $ref,int $n) : array {
-            ///////////////////////////////////////////////////////
-            //  A COMPLETER
-            ///////////////////////////////////////////////
-            $b = $this->db->query("SELECT * FROM article where ref >= $ref  LIMIT $n");
-            $array = $b->fetchAll(PDO::FETCH_CLASS, 'Article');
-            return $array;
 
         }
 
+        function getJeu(int $ref) : Jeu {
+          $b = $this->db->query("SELECT * FROM jeux where ref = $ref  LIMIT $n");
+          $array = $b->fetchAll(PDO::FETCH_CLASS, 'Jeu');
+          return $array[0];
+        }
+///////////////////////////:
         // Acces à la référence qui suit la référence $ref dans l'ordre des références
         function next(int $ref) : int {
             ///////////////////////////////////////////////////////

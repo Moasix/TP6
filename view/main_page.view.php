@@ -14,7 +14,7 @@ $arrayCategorie = $dao->getAllCat();
       <?php  include('../view/header_include.view.php') ?>
 
       <?php foreach ($games as $key => $value) { ?>
-        <a href="../jeu.ctrl.php/?ind=<?=$value->ref?>">
+        <a href="../controler/jeu.ctrl.php/?ref=<?=$value->ref?>">
           <img src="../data/covers/<?=$value->image?>" alt="">
         </a>
       <?php } ?>
