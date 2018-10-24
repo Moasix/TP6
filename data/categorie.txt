@@ -9,4 +9,4 @@
 9|Sport|9
 10|Simulation|10
 11|Massive|11
-12|RPG|
+12|RPG|12
