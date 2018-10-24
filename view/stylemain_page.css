@@ -56,9 +56,12 @@ header nav ul {
 
 /* BODY */
 
-
-#divCONTAINER img {
+#MAIN_CONTAINER img {
   max-height: 250px;
+}
+
+#MAIN_CONTAINER {
+  display: flex;
 }
 
 

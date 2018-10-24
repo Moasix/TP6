@@ -13,21 +13,18 @@ $arrayCategorie = $dao->getAllCat();
     <body>
       <?php  include('../view/header_include.view.php') ?>
 
-      <div id="divCONTAINER">
+      <h2>GENRE ACTUEL</h2>
+      <div id="MAIN_CONTAINER">
 
-
-      <?php foreach ($games as $key => $value) { ?>
-        <a href="../controler/jeu.ctrl.php/?ref=<?=$value->ref?>">
-          <img src="../data/covers/<?=$value->image?>" alt="">
-        </a>
-      <?php } ?>
-
-      <aside>
-
-      </aside>
-      <div class="">
-
-      </div>
+        <?php foreach ($games as $key => $value) { ?>
+          <article>
+            <h3><?=$value->titre?></h3>
+            <a href="../controler/jeu.ctrl.php/?ref=<?=$value->ref?>">
+              <img src="../data/covers/<?=$value->image?>" alt="">
+            </a>
+            <p>Prix : <?=$value->prix?> €</p>
+          </article>
+        <?php } ?>
 
       </div>
       <?php  include('../view/footer_include.view.php') ?>
