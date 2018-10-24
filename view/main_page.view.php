@@ -8,14 +8,12 @@ $arrayCategorie = $dao->getAllCat();
     <head>
       <meta charset="utf-8">
       <title>Juk Zik</title>
-      <link rel="stylesheet" type="text/css" href="styleMusique.css" />
+      <link rel="stylesheet" type="text/css" href="../view/stylemain_page.css" />
     </head>
     <body>
 
+<?php  include('../view/header_include.view.php') ?>
 
-      <header>
-        <?php  include('../view/header_include.view.php') ?>
-      </header>
 
 
       <h1>Jukebox</h1>
