@@ -64,6 +64,9 @@ header nav ul {
   display: flex;
 }
 
+#MAIN_CONTAINER article h3 {
+    font-size: 80%;
+}
 
 /* FOOTER */
 
@@ -72,6 +75,7 @@ footer {
   background-color: #971011;
   display: flex;
   margin-top: 20px;
+  height: 100px;:
 }
 
 footer img {
