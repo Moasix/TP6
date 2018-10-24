@@ -3,7 +3,7 @@
       <div id="ContainerHeader">
 
         <div>
-          <a href="#">  <img src="../view/images/dog3.png" alt="Logo de PC Master Race"></a>
+          <a href="#">  <img src="../view/images/adibou_master_race.gif" alt="Logo de PC Master Race"></a>
         </div>
 
         <div>
