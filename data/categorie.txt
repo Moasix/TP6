@@ -1,12 +1,13 @@
-1|PC|1
-2|PS4|2
-3|XBOX ONE|3
-4|SWITCH|4
-5|Action|5
-6|Aventure|6
-7|indie|7
-8|Course|8
-9|Sport|9
-10|Simulation|10
-11|Massive|11
-12|RPG|12
+1|FPS
+2|Combat
+3|Reflexion Strategie
+4|Plates_formes
+5|Action
+6|Aventure
+7|indie
+8|Course
+9|Sport
+10|Simulation
+11|MMO
+12|RPG
+13|Bac à sable
