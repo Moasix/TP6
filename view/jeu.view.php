@@ -7,13 +7,9 @@
     </head>
     <body>
       <?php  include('../view/header_include.view.php') ?>
-
-      <?php foreach ($games as $key => $value) { ?>
-        <a href="../controler/jeu.ctrl.php?ref=<?=$value->ref?>">
-          <img src="../data/covers/<?=$value->image?>" alt="">
-        </a>
-      <?php } ?>
-
-
+      <h2><?=$jeu->titre ?></h2>
+      <img src="../data/covers/<?=$jeu->image?>" alt="">
+      <?= $jeu->prix?>€
+      <p><?= $jeu->description?></p>
     </body>
 </html>
