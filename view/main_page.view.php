@@ -1,3 +1,9 @@
+
+<?php
+require_once('../model/DAO.class.php');
+$arrayCategorie = $dao->getAllCat();
+?>
+
 <html lang="fr" dir="ltr">
     <head>
       <meta charset="utf-8">
@@ -8,7 +14,7 @@
 
 
       <header>
-
+        <?php  include('../view/header_include.view.php') ?>
       </header>
 
 
