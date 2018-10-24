@@ -1,3 +1,12 @@
+<?php
+require_once('../model/DAO.class.php');
+$arrayCategorie = getAllCat();
+
+foreach($arrayCategorie as $uneCat){
+  var_dump($uneCat->nom);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
@@ -15,6 +24,18 @@
       </div>
       <nav>
         <ul>
+
+
+
+
+          <li><a href="#">QUI SOMMES NOUS ?</a></li>
+          <li><a href="#">LE TOP 10</a></li>
+          <li><a href="#">GENRES</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">QUI SOMMES NOUS ?</a></li>
+          <li><a href="#">LE TOP 10</a></li>
+          <li><a href="#">GENRES</a></li>
+          <li><a href="#">CONTACT</a></li>
           <li><a href="#">QUI SOMMES NOUS ?</a></li>
           <li><a href="#">LE TOP 10</a></li>
           <li><a href="#">GENRES</a></li>
