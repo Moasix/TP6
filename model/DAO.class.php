@@ -11,7 +11,7 @@
         // L'objet local PDO de la base de donnée
         private $db;
         // Le type, le chemin et le nom de la base de donnée
-        private $database = 'sqlite:../data/db/articles.db';
+        private $database = 'sqlite:../data/db/database.db';
         // Constructeur chargé d'ouvrir la BD
         function __construct() {
             ///////////////////////////////////////////////////////
@@ -31,7 +31,7 @@
             ///////////////////////////////////////////////////////
             //  A COMPLETER
             ///////////////////////////////////////////////////////
-            $b = $this->db->query("SELECT * FROM categorie");
+            $b = $this->db->query("SELECT * FROM categories");
             $array = $b->fetchAll(PDO::FETCH_CLASS, 'Categorie');
             return $array;
         }
