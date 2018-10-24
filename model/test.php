@@ -9,6 +9,17 @@
 
       <h1>test</h1>
       <?php
+      require_once(../model/DAO.php);
+      
+
+       ?>
+
+
+
+
+
+
+      <?php
 
 
       if(!isset($_SESSION['texte']){
