@@ -8,7 +8,7 @@ $arrayCategorie = $dao->getAllCat();
     <head>
       <meta charset="utf-8">
       <title>PC Master Race</title>
-      <link rel="stylesheet" type="text/css" href="stylemain_page.css" />
+      <link rel="stylesheet" type="text/css" href="../view/stylemain_page.css" />
     </head>
     <body>
       <?php  include('../view/header_include.view.php') ?>
