@@ -33,7 +33,7 @@
         }
 
         function getJeu(int $ref) : Jeu {
-          $b = $this->db->query("SELECT * FROM jeux where ref = $ref  LIMIT $n");
+          $b = $this->db->query("SELECT * FROM jeux where ref = $ref");
           $array = $b->fetchAll(PDO::FETCH_CLASS, 'Jeu');
           return $array[0];
         }
