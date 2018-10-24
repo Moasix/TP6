@@ -11,6 +11,8 @@ h1{
     color: #E16A72; /* rose */
   }
 
+
+/* HEADER */
 header>div{
   background-color: aqua;
   display: flex;
@@ -28,8 +30,6 @@ header div div:last-child img {
   height: 50px;
   width: 50px;
 }
-
-
 
 header nav ul {
     padding:0;
@@ -51,3 +51,28 @@ header nav ul {
     	padding:0.5em;
     	display: inline-block;
     }
+
+
+
+/* BODY */
+
+
+#divCONTAINER img {
+  max-height: 250px;
+}
+
+
+/* FOOTER */
+
+
+footer {
+  background-color: #971011;
+  display: flex;
+  margin-top: 20px;
+}
+
+footer img {
+
+  height: 100px;
+  width: 100px;
+}
