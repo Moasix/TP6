@@ -26,13 +26,32 @@ header div div:first-child img {
   width: 100px;
 }
 
-/* header div div:nth-child(2) {
-  display: inline;
-} */
+header div div:nth-child(2) input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+header div div:nth-child(2) button {
+  float: right;
+padding: 6px 10px;
+margin-top: 8px;
+margin-right: 16px;
+background: #ddd;
+font-size: 17px;
+border: none;
+cursor: pointer;
+}
+
+header div div:nth-child(2) button {
+  background: #ccc;
+}
+
 
 header div div:nth-child(2) img {
-  height: 20px;
-  width: 20px;
+  height: 17px;
+  width: 17px;
 }
 
 header div div:last-child img {

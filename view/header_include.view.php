@@ -7,9 +7,17 @@
     </div>
 
     <div>
-      <img src="../view/images/search.svg" alt="rechercher un jeu vidéo en particulier">
-      <input type="text" name="search" value="" placeholder="abricot" >
+      <!-- <input type="text" name="search" value="" placeholder="abricot" >
+      <img src="../view/images/search.svg" alt="Rechercher un jeu vidéo en particulier"> -->
+
+        <form action="#">
+          <input type="text" placeholder="abricot.." name="search">
+          <button type="submit"><img src="../view/images/panier.svg" alt="Rechercher un jeu vidéo en particulier"></button>
+        </form>
+
+
     </div>
+
 
     <div>
       <a href="#">  <img src="../view/images/panier.svg" alt="Panier Utilisateur"></a>

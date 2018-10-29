@@ -17,6 +17,6 @@ $games = $dao->getNCat($categorie,0,10);
 //// APPEL A LA VUE
 /////////////////////////////////
 
-include_once("../view/main_page.view.php");
+include_once("../view/categorie.view.php");
 
  ?>

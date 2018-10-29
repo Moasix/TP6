@@ -18,19 +18,21 @@
             }
         }
 
-
+        //renvoie une 'array' de toutes les categories
         function getAllCat() : array {
             $b = $this->db->query("SELECT * FROM categorie");
             $array = $b->fetchAll(PDO::FETCH_CLASS, 'Categorie');
             return $array;
         }
 
+        //renvoie la categorie correspondant à l'id en entrée
         function getCat(int $id) : Categorie {
             $b = $this->db->query("SELECT * FROM categorie where id = $id");
             $array = $b->fetchAll(PDO::FETCH_CLASS, 'Categorie');
             return $array[0];
         }
 
+        //selection
         function getN(int $ref,int $n) : array {
             $b = $this->db->query("SELECT * FROM jeux where ref >= $ref order by ref LIMIT $n");
             $array = $b->fetchAll(PDO::FETCH_CLASS, 'Jeu');
@@ -38,6 +40,7 @@
 
         }
 
+        //selectionne un jeu
         function getJeu(int $ref) : Jeu {
           $b = $this->db->query("SELECT * FROM jeux where ref = $ref");
           $array = $b->fetchAll(PDO::FETCH_CLASS, 'Jeu');
