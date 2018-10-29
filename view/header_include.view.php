@@ -10,9 +10,9 @@
       <!-- <input type="text" name="search" value="" placeholder="abricot" >
       <img src="../view/images/search.svg" alt="Rechercher un jeu vidéo en particulier"> -->
 
-        <form action="#">
-          <input type="text" placeholder="abricot.." name="search">
-          <button type="submit"><img src="../view/images/panier.svg" alt="Rechercher un jeu vidéo en particulier"></button>
+        <form action="">
+          <input type="text" placeholder="Rechercher (min 5 caractères)" name="search">
+          <button type="submit"><img src="../view/images/recherche.svg" alt="Rechercher un jeu"></button>
         </form>
 
 
