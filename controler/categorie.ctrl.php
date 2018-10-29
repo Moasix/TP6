@@ -1,6 +1,6 @@
 <?php
 //Page
-
+session_start();
 require_once('../model/DAO.class.php');
 
 /////////////////////////////////

@@ -2,7 +2,7 @@
 // Controleur du jeu
 //Cette page va afficher le descriptif ainsi que tous les détails
 //d'un jeu en particulier, elle est propre à un jeu.
-
+session_start();
 // Ce controleur a besoin du modèle
 require_once('../model/DAO.class.php');
 

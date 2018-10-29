@@ -33,7 +33,7 @@
         }
 
         //retourne $n jeux à partir de $ref
-        function getN(int $ref,int $n) : array {
+        function getNjeu(int $ref,int $n) : array {
             $b = $this->db->query("SELECT * FROM jeux where ref >= $ref order by ref LIMIT $n");
             $array = $b->fetchAll(PDO::FETCH_CLASS, 'Jeu');
             return $array;
