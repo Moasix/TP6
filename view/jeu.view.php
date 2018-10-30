@@ -11,5 +11,11 @@
       <img src="../data/covers/<?=$jeu->image?>" alt="">
       <?= $jeu->prix?>€
       <p><?= $jeu->description?></p>
+      <p>
+        <form class="" action="../controler/panier.ctrl.php" method="get">
+          <button type="submit" name="ref" value =<?=$jeu->ref?>> ajouter au panier</button>
+        </form>
+
+      </p>
     </body>
 </html>

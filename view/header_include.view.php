@@ -10,9 +10,9 @@
       <!-- <input type="text" name="search" value="" placeholder="abricot" >
       <img src="../view/images/search.svg" alt="Rechercher un jeu vidéo en particulier"> -->
 
-        <form action="#">
-          <input type="text" placeholder="abricot.." name="search">
-          <button type="submit"><img src="../view/images/panier.svg" alt="Rechercher un jeu vidéo en particulier"></button>
+        <form action="../controler/main.ctrl.php">
+          <input type="text" placeholder="Rechercher (5 caractères min)" name="search">
+          <button type="submit"><img src="../view/images/recherche.svg" alt="Rechercher un jeu"></button>
         </form>
 
 
@@ -20,14 +20,15 @@
 
 
     <div>
-      <a href="#">  <img src="../view/images/panier.svg" alt="Panier Utilisateur"></a>
+      <a href="../controler/panier.ctrl.php">  <img src="../view/images/panier.svg" alt="Panier Utilisateur"></a>
     </div>
 
   </div>
   <nav>
     <ul>
-      <?php foreach ($arrayCategorie as $indiceCat => $valueCat) { ?>
-        <li><a href="../controler/categorie.ctrl.php?cat=<?=$valueCat->id?>"><?= $valueCat->nom ?></a></li>
+      <?php
+       foreach ($arrayCategorie as $indiceCat => $valueCat) { ?>
+        <li><a href="../controler/main.ctrl.php?cat=<?=$valueCat->id?>"><?= $valueCat->nom ?></a></li>
       <?php } ?>
     </ul>
   </nav>
