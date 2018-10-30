@@ -13,84 +13,52 @@
 854|Sid Meier's Civilization V|3|44.99|854.jpg|Établissez votre suprématie totale sur le monde en constituant une civilisation depuis ses premiers pas vers la conquête spatiale : participer aux guerres, user de diplomatie, découvrir de nouvelles technologies, affronter ou suivre les plus grands dirigeants de l'histoire et construire l'empire le plus prospère et le plus puissant que le monde ait jamais connu.
 475|Ori and the Blind Forest Definitive Edition|4|19.99|475.jpg|La forêt de Nibel se meurt. À la suite d'une terrible tempête ayant déclenché une série d'événements tragiques, Ori doit partir à l'aventure pour trouver le courage d'affronter un sinistre ennemi et sauver sa terre natale. "Ori and the Blind Forest" relate l'histoire d'une jeune créature orpheline à la destinée héroïque, au travers d'un jeu de plateforme et d'action aux graphismes époustouflants, développé par Moon Studios. Dans la Definitive Edition enrichie d'une myriade de nouvelles fonctionnalités, découvrez un univers dessiné à la main dans lequel évoluent des personnages aux animations extrêmement soignées, sur une bande originale entièrement interprétée par un orchestre. "Ori and the Blind Forest" est une ode à l'amour, au sacrifice et à l'espoir qui brûle telle une flamme en chacun de nous.
 2476|Crash Bandicoot: N. Sane Trilogy|Cat|39.99|2476.jpg|Votre marsupial préféré, Crash Bandicoot, est de retour ! Il est amélioré, enthousiasmé et prêt à danser dans la compilation N. Sane Trilogy ! Redécouvrez Crash Bandicoot comme jamais auparavant. Tournez, sautez, tapez et recommencez pour surmonter des défis épiques et vivre des aventures extraordinaires dans les trois jeux à l'origine de tout : Crash Bandicoot, Crash Bandicoot 2: Cortex Strikes Back et Crash Bandicoot 3: Warped. Retrouvez Crash remasterisé en HD et préparez-vous, ça va WUMPER !
-
 948|BattleBlock Theater|4|14.99|948.jpeg|BattleBlock Theater1 est un jeu de plates-formes comique développé par The Behemoth et publié par Microsoft Studios pour la Xbox 360, Windows, et Linux. C'est le troisième titre venant de The Behemoth après Alien Hominid et Castle Crashers.
-
 13456|Castle Crashers|4|11.99|13456.jpg|Sortez votre épée et frayez-vous un chemin vers la victoire dans ce jeu d'arcade aventure en 2D primé et signé The Behemoth !
-
 904|Ark: Survival Evolved|5|54.99|904.jpg|En tant qu'homme ou femme échoué nu, en train de gelé et de mourir de faim sur une île mystérieuse, vous devez chasser, récolter, fabriquer des objets, faire pousser des plantes et construire des abris pour survivre. Utilisez vos compétences et votre ruse pour tuer, apprivoiser, faire accoupler et chevaucher des dinosaures et des créatures primitives vivant sur l'Arche, en faisant équipe avec des centaines de joueurs pour survivre, dominer et ... s'échapper !
-
 2419|Batman: Arkham Knight|5|19.99|2419.jpg|Batman™: Arkham Knight marque le dénouement épique de la trilogie primée Arkham, créée par les studios Rocksteady. Développé exclusivement pour les consoles nouvelle génération, Batman: Arkham Knight introduit une version unique de la Batmobile, créée par Rocksteady. Ce véhicule légendaire, associé au gameplay plébiscité de la série Batman Arkham, offre aux joueurs l'expérience de jeu Batman la plus complète. Roulez à toute allure dans les rues de Gotham City et élancez-vous au-dessus des toits. Dans ce final explosif, Batman affronte la menace ultime dans la ville qu’il s’est juré de protéger. L'Épouvantail est de retour pour réunir les super-vilains de Gotham et détruire Batman une bonne fois pour toutes.
-
 2648|Assassin's Creed Odyssey|5|59.99|2648.jpg|Forgez votre destin dans Assassin's Creed Odyssey. Passez de paria à légende vivante lors d'une odyssée durant laquelle vous découvrirez votre passé et changerez le destin de la Grèce.
-
 400|Assassin's Creed: Unity|5|29.99|400.jpg|Assassin's Creed® Unity est un jeu d'action-aventure en monde ouvert qui se déroule à Paris pendant la Révolution Française. Vous pourrez maintenant personnaliser votre héros, Arno, en choisissant son équipement. Cela aura un impact sur l'aspect visuel, mais aussi sur le gameplay. En plus de la campagne solo, Assassin's Creed Unity permet de jouer à 4 dans des missions additionnelles scénarisées. Assistez aux moments clés de l'Histoire de France, dans le monde ouvert le plus crédible et vivant jamais créé.
-
 146|The Elder Scrolls V: Skyrim|12|14.99|146.jpg|Le nouveau chapitre très attendu de la saga Elder Scrolls nous arrive des créateurs du jeu de l'année 2006 et 2008, Bethesda Game Studios. Skyrim réinvente et révolutionne le monde ouvert, ramenant à la vie un monde complet que vous pourrez librement explorer.
-
 865|Doom|5|19.99|865.jpg|Développé par id Software, le pionnier des jeux de tir à la première personne et du mode match à mort multijoueur, DOOM revient sous une forme moderne qui conserve sa difficulté et sa brutalité. Que vous décidiez d'éradiquer des hordes de démons sorties tout droit de l'Enfer dans la campagne du jeu ou que vous combattiez vos amis dans l'un des multiples modes multijoueur, le programme est le même : des démons sans pitié, des armes d'une puissance inouïe et des mouvements rapides et fluides qui sont les fondations de ce jeu de tir intense à la première personne.. Prolongez votre expérience de jeu en utilisant l'éditeur DOOM SnapMap pour créer, jouer et partager facilement du contenu avec le monde entier.
-
 1230|Rust|6|31.99|1230.jpg|Rust est un survival-horror en monde ouvert. Le joueur doit y survivre en serveur dans un monde post-apocalyptique particulièrement hostile, tout en gérant la faim, la soif et le froid, et en faisant attention aux monstres et aux autres joueurs ayant parfois de mauvaises intentions. Créez des alliances avec d'autres joueurs et formez une forteresse afin de tenter de survivre le plus longtemps dans un monde hostile. Et n’oubliez pas que la nourriture demeure une ressource des plus rares.
-
 152|Tomb Raider|6|19.99|152.jpg|Tomb Raider est un jeu d'action-aventure sur PC. On y incarne la jeune Lara, âgée de 21 ans, qui va devoir survivre sur une île à la suite d'un naufrage. Pour ce faire, elle devra se nourrir, chasser mais aussi faire attention aux menaces qui planent sur elle.
-
 1003|Subnautica|6|20.99|1003.jpg|Subnautica est un jeu de monde ouvert, d’exploration sous-marine et d’aventure, actuellement en construction à Unknown Worlds, le développeur indépendant derrière Natural Selection 2.
-
 485|Rise of the Tomb Raider|6|49.99|485.jpg|Après la découverte d'un mystère ancestral, Lara va devoir explorer les recoins les plus traîtres et isolés de la Sibérie afin de mettre la main sur le secret de l'immortalité avant une organisation sans merci : les trinitaires. Au cours de son périple, Lara va devoir faire preuve de ruse et tirer parti de ses compétences de survie, former de nouvelles alliances et faire face à son destin d'aventurière. Plongez au cœur de l'action, partez à la conquête d'environnements hostiles d'une beauté à couper le souffle, maîtrisez l'art de la guérilla et explorez des tombes mortelles dans cet opus marquant une nouvelle étape dans l'évolution du jeu de survie et d'action. « Rise of the Tomb Raider » voit Lara devenir bien plus qu'une simple survivante et rentrer dans la légende en tant que Tomb Raider
-
-186|Grand Theft Auto V|5|29.99|186.jpg|Grand Theft Auto V pour PC exploitera pleinement les capacités des PC pour intégrer de nombreuses améliorations : résolution supérieure, graphismes plus détaillés, trafic plus dense, profondeur de champ accrue, IA améliorée, nouveaux animaux, effets climatiques et animations de dégâts avancées pour une expérience de jeu vraiment exceptionnelle.
-
+186|Grand Theft Auto V|6|29.99|186.jpg|Grand Theft Auto V pour PC exploitera pleinement les capacités des PC pour intégrer de nombreuses améliorations : résolution supérieure, graphismes plus détaillés, trafic plus dense, profondeur de champ accrue, IA améliorée, nouveaux animaux, effets climatiques et animations de dégâts avancées pour une expérience de jeu vraiment exceptionnelle.
 2468|Call of Duty: Black Ops 4|1|59.99|2468.jpg|Call of Duty: Black Ops 4 offre l’expérience multijoueur la plus riche et tactique de l’histoire de Black Ops, le mode Zombies le plus ambitieux avec trois aventures complètes disponibles au lancement et un tout nouveau mode Battle Royale réunissant les personnages, les environnements, les armes et les équipements les plus emblématiques de la série Black Ops dans une expérience unique mêlant affrontements et survie.
-
 1611|Human: Fall Flat|7|14.99|1611.jpg|Bob n'est qu'un humain ordinaire sans le moindre super-pouvoir, mais dotez-le des bons outils et il sera capable de grandes choses. Détournez les outils pour donner à Bob encore plus de possibilités !
-
 1778|To the Moon|7|7.99|1778.jpg|Les Docteurs Rosalene et Watts ont un travail étrange : ils offrent aux gens une seconde vie, depuis le début... mais seulement dans l'esprit de leurs patients.
-
 494|Life is Strange|6|19.99|494.jpg|Life Is Strange est un jeu en 5 épisodes qui va révolutionner le concept des jeux narratifs à choix/conséquences, en permettant au joueur/à la joueuse de remonter dans le temps afin d’influencer le passé, le présent et l’avenir.
-
 129|Undertale|7|9.99|129.jpeg|Undertale est un jeu vidéo de rôle indépendant développé par Toby Fox. Le jeu propose de contrôler un enfant tombé dans l'Underground (« souterrain »), une grande région isolée sous la surface de la Terre, séparée de la surface par une barrière magique et peuplée de monstres. Le joueur interagit à plusieurs reprises avec ces monstres dans sa quête pour remonter à la surface, principalement via un système de combat mêlant tour-par-tour et shoot 'em up. Dans celui-ci, le joueur doit éviter des projectiles envoyés par les monstres rencontrés, et a ensuite la possibilité d'attaquer son adversaire pour le tuer, ou de l'épargner. Le choix de tuer ou épargner affecte le jeu, altérant les dialogues, les personnages, et la narration dépendant des choix effectués.
-
 322|Bioshock|5|19.99|322.jpg|BioShock n'est pas un jeu de tir comme les autres : ses armes et ses stratégies sont originales. Vous aurez un arsenal complet à votre disposition du simple revolver au lance-grenade. Vous aurez également la possibilité de modifier votre ADN pour une meilleure "efficacité". Vous pourrez ainsi vous injecter des plasmids pour acquérir des pouvoirs surhumains comme par exemple électrocuter ou congeler vos ennemis pour pouvoir les pulvériser à coup de clef à molette.
 Les rencontres sont aléatoires : deux joueurs différents ne pourront ainsi jamais vivre la même aventure.
-
 323|Bioshock 2|5|19.99|323.jpg|L'action se déroule une dizaine d'année après les évènements du titre original, les couloirs de Rapture bruissent de nouveau du tintement de l'horreur du passé. Le long de a côte atlantique un monstre kidnappe les petites filles et les emporte sous la mer dans la cité engloutie. Les joueurs prendront le rôle des Big Daddy et parcourront la cité à la recherche d'une réponse.
-
 1566|Abzu|6|19.99|1566.jpg|Le génie responsable de la création de Journey® présente ABZÛ, une magnifique aventure sous-marine qui évoque le rêve de la plongée. Plongez dans un monde caché vivant débordant de couleurs au fil de votre descente au cœur de l’océan. Découvrez des centaines d’espèces uniques et formez un lien avec la vie marine environnante. Mais soyez prudent, car de nombreux dangers rôdent dans les profondeurs.
-
 2627|Raft|7|19.99|2627.jpg|Seul ou entre amis, votre mission est de survivre à une épopée océanique à travers une mer périlleuse! Ramassez les débris pour survivre, élargissez votre radeau et méfiez-vous des dangers de l'océan!
-
 48|Celeste|7|19.99|48.jpg|Celeste est un jeu vidéo de plates-formes développé et édité par le studio Matt Makes Games, composé de Matt Thorson et Noel Berry. Le prototype de jeu est développé en quatre jours sur la machine virtuelle Pico-8 à l'occasion d'une game jam, avant de connaître le développement de la version finale.
-
-id|NameJeu|Cat|PRIX|imageJPG|Desc
-
-id|NameJeu|Cat|PRIX|imageJPG|Desc
-
-id|NameJeu|Cat|PRIX|imageJPG|Desc
-
-id|NameJeu|Cat|PRIX|imageJPG|Desc
-
-id|NameJeu|Cat|PRIX|imageJPG|Desc
-
-id|NameJeu|Cat|PRIX|imageJPG|Desc
-
-id|NameJeu|Cat|PRIX|imageJPG|Desc
-
-id|NameJeu|Cat|PRIX|imageJPG|Desc
-
-id|NameJeu|Cat|PRIX|imageJPG|Desc
-
-id|NameJeu|Cat|PRIX|imageJPG|Desc
-
-id|NameJeu|Cat|PRIX|imageJPG|Desc
-
-id|NameJeu|Cat|PRIX|imageJPG|Desc
-
-id|NameJeu|Cat|PRIX|imageJPG|Desc
-
-id|NameJeu|Cat|PRIX|imageJPG|Desc
-
-id|NameJeu|Cat|PRIX|imageJPG|Desc
-
-id|NameJeu|Cat|PRIX|imageJPG|Desc
-
-id|NameJeu|Cat|PRIX|imageJPG|Desc
+612|Battlefield 5|1|59.99|612.jpg|Participez au plus grand conflit de l'Histoire avec Battlefield V. La licence revient aux sources et dépeint la Seconde Guerre mondiale comme jamais auparavant. Livrez des batailles multijoueur frénétiques et brutales aux côtés de votre escouade dans des modes imposants comme Grandes opérations et coopératifs comme Tir Groupé. Prenez part aux batailles méconnues de la Guerre avec les récits de guerre du mode solo. Combattez dans des environnements inédits et spectaculaires aux quatre coins du monde et découvrez le Battlefield le plus riche et le plus immersif à ce jour.
+514|DiRT Rally|8|34.99|514.jpg|Bienvenue dans DiRT Rally : un nouveau monde de DiRT. Une expression pure de rallye, l'apogée des courses tout-terrain et cela dès maintenant, en early access, avec des mises à jour régulières et gratuites, y compris de nouveaux lieux, de nouveaux modes de jeu et de nouveaux véhicules.
+DiRT Rally saisit l'essence unique du rallye : essayer de garder le contrôle de vos émotions, alors que vous roulez à une vitesse vertigineuse, en cherchant à éliminer vos concurrents tout en sachant qu'un accident pourrait irrémédiablement nuire à votre chronomètre. Il s'agit du test ultime des compétences d'un pilote, le summum du risque et de la jouabilité.
+3188|DiRT Rally 2.0|8|54.99|3188.jpg|DiRT Rally 2.0 vous invite à arpenter les circuits de rallye les plus emblématiques du globe, dans les véhicules tout-terrain les plus puissants jamais conçus. Mais n'oubliez pas que la moindre erreur peut mettre fin à votre étape.
+1544|TrackMania² Stadium|8|9.99|1544.jpg|TrackMania² Stadium marque le grand retour de l’environnement “Stadium” plébiscité par les millions de joueurs de TrackMania Nations Forever. Tirant pleinement parti des capacités de la plateforme ManiaPlanet dans laquelle le titre est désormais intégré, TrackMania² Stadium offre une amélioration des graphismes et de l’éditeur de circuits, et propose de nombreux autres services.
+894|TrackMania Turbo|8|39.99|894.jpg|Repoussez vos limites sur des tracés abracadabrants et défiez vos amis en écran partagé (hors connexion) ou en ligne.
+2105|TrackMania² : Lagoon|8|19.99|2105.jpg|Dans Trackmania² Lagoon, vous évoluerez sur des pistes surplombant une île tropicale remplie d'activités démentes.
+670|Rocket League|9|19.99|670.jpg|Installez-vous au volant d'un engin fracassant et de haute volée à propulsion-fusée et pilotez dans l'arène Rocket League pour le dernier sport en date, le plus rapide et dopé à l'adrénaline qui soit, à atterrir sur PlayStation 4.
+Choisissez parmi un vaste choix de véhicules à conduire et personnaliser dans cette rencontre entre football et derby de démolition et maîtrisez les compétences requises pour marquer des buts qui mettront le feu aux cages. Élevez-vous haut dans les airs pour exécuter des tirs acrobatiques audacieux et des sauvetages téméraires, ou utilisez des tactiques agressives pour vous débarrasser des joueurs adverses à des vitesses supersoniques.
+2654|NBA 2K19|9|49.99|2654.jpg|Voilà déjà vingt ans que NBA 2K redéfinit l'univers des jeux de sport, entre gameplay et graphismes hors-du-commun, modes de jeu révolutionnaires et monde ouvert immersif. Cette année encore, NBA 2K19 repousse les limites en se rapprochant encore un peu plus de la véritable passion du basket et de sa culture.
+2074|Football Manager 2018|9|54.99|2074.jpg|On dit que le football c'est d'abord une question d'opinions et surtout, que tout le monde a la sienne, mais ici, il n'y a que la vôtre qui compte.
+3124|Fishing Sim World|9|34.99|3124.jpg|Fishing Sim World est un simulateur hautement réaliste qui vous fera voyager et vivre des expériences de pêche sans précédent. Ressentez l’adrénaline monter lorsque vous attraperez de monstrueux bars, de grands brochets ou de gigantesques carpes ! Fishing Sim World dispose de physiques en jeu réalistes et de poissons IA authentiques qui rendront cette expérience aussi immersible que possible.
+272|Les Sims 4|10|39.99|272.jpg|Le très attendu jeu Les Sims 4 vous permet de jouer avec la vie comme jamais auparavant. Créez et contrôlez de nouveaux Sims dotés d'un esprit d'un corps et d'un cœur. Bâtissez-leur des maisons uniques. Ecrivez l'histoire de vos Sims et vivez des expériences surprenantes et excitantes. De nouveaux outils créatifs tactiles sont à votre disposition Créer un Sim et le mode Construction basé sur un système de pièces modulables. Vous pouvez désormais créér du contenu fascinant de manière intuitive et amusante. Mettez en avant vos créations préférées grâce à de toutes nouvelles façons de partager et faites votre choix dans le contenu de la communauté pour vous inspirer.
+51|Les Sims 3|10|31.99|51.jpg|Les Sims 3 Pack de démarrage contient tout ce dont vous avez besoin pour commencer à créer des Sims uniques ayant une personnalité et à contrôler leur vie. Les Sims 3 vous permet de tout personnaliser, de l’apparence de vos Sims à leur maison. Accomplissez leur destin et réalisez leurs souhaits… ou pas !
+153|Simcity|10|61.99|153.jpg|SimCity est un jeu de gestion sur PC. Vous incarnez le maire d'une ville et vous avez les pleins pouvoirs sur sa construction et son développement. Imaginez votre ville idéale et essayez de la construire malgré les soucis de pollution, d'incendies ou de criminalité. Via internet, le jeu permet d'établir des relations entre les différentes cités créées par les joueurs.
+2678|Bus Simulator 18|10|29.99|2678.jpg|Dans Bus Simulator 18, vivez au plus près la vie d’un chauffeur de bus en ville dans un vaste monde ouvert urbain. Vous découvrirez de nombreux décors comme les zones portuaires ou industrielles, le centre-ville ou le quartier des affaires ! Mettez-vous au volant de 8 véritables autobus de grandes marques comme Mercedes-Benz, Setra, MAN et IVECO BUS et soyez à l’heure pour emmener vos passagers en toute sécurité jusqu’à leur destination. Vous pourrez jouer seul dans le mode solo ou avec vos amis dans le mode multi.
+3032|World of Warcraft: Battle for Azeroth|11|44.99|3032.jpg|Azeroth a payé un prix terrible pour mettre un terme à la croisade apocalyptique de la Légion. Mais alors même que le monde panse ses plaies, la confiance entre l’Alliance et la Horde semble avoir été brisée à jamais. Le conflit ancestral s’embrase à nouveau : rassemblez vos alliés et défendez la cause de votre faction, car l’avenir d’Azeroth se jouera dans les flammes de la guerre.
+676|Black Desert Online|11|9.99|676.jpg|Black Desert Online est un MMORPG dans un monde vivant en constante évolution. Expérimentez des combats rapides et pleins d’action, chassez des monstres et terrassez des boss gigantesques, battez-vous aux côtés de vos partenaires de guilde dans les guerres de siège, affûtez vos talents de vie comme la pêche, le commerce, la cuisine et bien plus encore ! Laissez-vous ébahir par des graphismes à couper le souffle, des combats intuitifs et une histoire immersive encrée dans un monde encore inexploré. Accompagné par l’Esprit Occulte dont le destin est lié au vôtre, dévoilez le secret des pierres noires et leur histoire remplie de corruption.
+183|Arma III|10|34.99|183.jpg|Plongez dans la simulation de combat militaire ultime ! Authentique, riche et ouvert, ArmA 3 vous envoie sur le front d’une guerre moderne ultra-réaliste.
+339|Don't Starve|13|14.99|339.jpg|Don’t Starve est un jeu de survie intransigeant en zone sauvage plein d'art et de magie.
+Vous incarnez Wilson, un scientifique intrépide qui a été piégé par un démon et transporté dans un mystérieux monde sauvage. Wilson devra apprendre comment exploiter son environnement et ses habitants si jamais il espère s'y échapper pour retrouver son chemin et rentrer à la maison.
+Entrez dans un monde étrange et inexploré rempli de créatures bizarres, de dangers, et de surprises. Ramassez les ressources nécessaires afin de réaliser les objets et les bâtiments qui correspondent à votre style de survie. Jouez de la façon dont vous le souhaitez dans le but de démêler les mystères de cette étrange contrée.
+268|The Witcher 3: Wild Hunt|12|29.99|268.jpg|The Witcher: Wild Hunt est un jeu de rôle à monde ouvert de nouvelle génération situé dans un univers fantastique aux graphismes époustouflants où le moindre choix peut avoir des répercussions profondes. Dans The Witcher, vous incarnez un chasseur de monstres, Geralt de Riv, chargé de retrouver une enfant prophétique dans un vaste monde ouvert, rempli de cités marchandes, d’îles peuplées de pirates vikings, de cols montagneux dangereux et de grottes oubliées à explorer.
+857|Dark Souls 3|12|59.99|857.jpg|Alors que les flammes vacillantes de votre feu de camp révèlent un monde en ruines, plongez dans un univers immense peuplé d'ennemis colossaux. Découvrez un monde épique et sombre au gameplay nerveux et aux combats toujours plus intenses. Fans inconditionnels ou nouveaux joueurs, laissez-vous submerger par les graphismes et le gameplay époustouflants.
+Désormais, seules les braises subsistent. Préparez-vous à embrasser les ténèbres... encore une fois !
