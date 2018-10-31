@@ -19,4 +19,9 @@ $games = $dao->getNCat($categorie,0,10);
 
 include_once("../view/categorie.view.php");
 
+
+
+
+
+///DAPRES CE QUE JAI COMPRIS ON UTILISE PLUS CETTE Page
  ?>
