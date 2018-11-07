@@ -10,26 +10,27 @@
     }
 
     function getArticles() : array {
-        return $this->articles;
+        $res = array();
+        foreach ($this->articles as $key => $value) {
+          if($value->quantite > 0){
+            $res[$key] = $value;
+          }
+        }
+        return $res;
     }
 
-    function addJeuPanier(int $ref, int $quantite) : void {
-      $alreadyIn = 0;
-      for ($i=0; $i < count($this->articles) && !$alreadyIn; $i++) {
-        if($this->articles[$i]->ref == $ref){
-          $this->articles[$i]->quantite += $quantite;
-          $alreadyIn = 1;
-        }
-      }
-      if (!$alreadyIn) {
-        $this->articles[] = new Article($ref,$quantite);
+    function addJeuPanier(int $ref, int $quantite) {
+      if (array_key_exists($ref, $this->articles)) {
+        $this->articles[$ref]->quantite ++;
+      } else{
+        $this->articles[$ref] = new Article($ref,$quantite);
       }
     }
 
     function getTotal() : float {
       $s = 0.0;
       global $dao;
-      foreach ($this->articles as $key => $value) {
+      foreach ($this->getArticles() as $key => $value) {
         $s += $dao->getJeu($value->ref)->prix*$value->quantite;
       }
       return $s;
@@ -38,6 +39,10 @@
     public function __sleep()
     {
       return array('articles');
+    }
+
+    function supprimerJeu(int $ref) {
+      $this->articles[$ref]->quantite = 0;
     }
   }
 ?>

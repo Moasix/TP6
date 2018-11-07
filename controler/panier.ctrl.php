@@ -17,6 +17,7 @@ if(isset($_GET['empty'])){
   session_destroy();
   session_start();
 }
+
 if(isset($_SESSION['panier'])){
   $panier = unserialize($_SESSION['panier']);
 }else{
@@ -24,13 +25,20 @@ if(isset($_SESSION['panier'])){
 }
 
 
-if(isset($_GET['ref'])){
-  if (isset($_GET['quantite'])){
-    $quantite = $_GET['quantite'];
-  }else{
-    $quantite = 1;
+if(isset($_GET['act'])){
+  if($_GET['act']=='add'){
+    if (isset($_GET['quantite'])){
+      $quantite = $_GET['quantite'];
+    }else{
+      $quantite = 1;
+    }
+    $panier->addJeuPanier($_GET['ref'], $quantite);
+  }else if($_GET['act']=='sup'){
+    $panier->supprimerJeu($_GET['ref']);
   }
-  $panier->addJeuPanier($_GET['ref'], $quantite);
+  $_SESSION['panier'] = serialize($panier);
+  header('Location: ../../controler/panier.ctrl.php');
+  exit();
 }
 
 $_SESSION['panier'] = serialize($panier);

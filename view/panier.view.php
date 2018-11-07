@@ -17,11 +17,14 @@
       ?>
       <article>
         <h3><?=$jeu->titre?></h3>
-        <a href="../controler/jeu.ctrl.php?ref=<?=$jeu->ref?>">
+        <a href="../controler/main.ctrl.php?ref=<?=$jeu->ref?>">
           <img src="../data/covers/<?=$jeu->image?>" alt="">
         </a>
         <p>Prix : <?=$jeu->prix?> €</p>
         <p>Quantite : <?=$value->quantite?> </p>
+        <a href="../controler/panier.ctrl.php/?act=sup&ref=<?=$jeu->ref?>">
+          <img src="" alt="supprimer">
+        </a>
       </article>
     <?php } ?>
     <p>Total : <?=$panier->getTotal()?></p>
