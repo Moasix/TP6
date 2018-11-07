@@ -11,12 +11,12 @@ $arrayCategorie  = $dao->getAllCat();
 $games = array();
 
 //recherche
-if(isset($_GET['search']) && strlen($_GET['search']) >= 5){
+if(isset($_GET['search']) && strlen($_GET['search']) >= 3){
   $search = $_GET['search'];
     foreach ($dao->getAllJeux() as $key => $value) {
       $substr = substr($value->titre, 0 , strlen($search));
       $lev = levenshtein($substr, $search);
-      if($lev <= 3){
+      if($lev <= 2){
         $games[] = $value;
       }
     }
