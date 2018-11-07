@@ -19,11 +19,7 @@ id|NameJeu|Cat|PRIX|imageJPG|Desc
 
 id|NameJeu|Cat|PRIX|imageJPG|Desc
 
-<?php
- foreach ($arrayCategorie as $indiceCat => $valueCat) { ?>
-  <li><a href="../controler/main.ctrl.php?cat=<?=$valueCat->id?>"><?= $valueCat->nom ?></a></li>
-  <p>coucou</p>
-<?php } ?>
+
 
 id|NameJeu|Cat|PRIX|imageJPG|Desc
 

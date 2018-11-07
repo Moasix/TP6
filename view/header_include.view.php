@@ -15,7 +15,6 @@
           <button type="submit"><img src="../view/images/recherche.svg" alt="Rechercher un jeu"></button>
         </form>
 
-
     </div>
 
 
@@ -25,14 +24,11 @@
 
   </div>
   <nav>
-    <!-- <p>COUCOU</p> -->
     <ul>
       <?php
-      foreach ($arrayCategorie as $indiceCat => $valueCat) {
-        printf("<li><a href=\"../controler/main.ctrl.php=".$valueCat->id."\">".$valueCat->nom."</a></li>");
-      }
-       ?>
-
+       foreach ($arrayCategorie as $indiceCat => $valueCat) { ?>
+        <li><a href="../controler/main.ctrl.php?cat=<?=$valueCat->id?>"><?= $valueCat->nom ?></a></li>
+      <?php } ?>
     </ul>
   </nav>
 
