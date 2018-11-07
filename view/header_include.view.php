@@ -25,11 +25,14 @@
 
   </div>
   <nav>
+    <!-- <p>COUCOU</p> -->
     <ul>
       <?php
-       foreach ($arrayCategorie as $indiceCat => $valueCat) { ?>
-        <li><a href="../controler/main.ctrl.php?cat=<?=$valueCat->id?>"><?= $valueCat->nom ?></a></li>
-      <?php } ?>
+      foreach ($arrayCategorie as $indiceCat => $valueCat) {
+        printf("<li><a href=\"../controler/main.ctrl.php=".$valueCat->id."\">".$valueCat->nom."</a></li>");
+      }
+       ?>
+
     </ul>
   </nav>
 
