@@ -10,6 +10,10 @@ require_once('../model/DAO.class.php');
 $arrayCategorie  = $dao->getAllCat();
 $games = array();
 
+if(isset($_SESSION['user'])){
+  $user = $_SESSION['user'];
+}
+
 //recherche
 if(isset($_GET['search']) && strlen($_GET['search']) >= 3){
   $search = $_GET['search'];

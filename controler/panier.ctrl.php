@@ -12,6 +12,9 @@ require_once('../model/DAO.class.php');
 $arrayCategorie  = $dao->getAllCat();
 $games = array();
 
+if(isset($_SESSION['user'])){
+  $user = $_SESSION['user'];
+}
 
 if(isset($_GET['empty'])){
   session_destroy();

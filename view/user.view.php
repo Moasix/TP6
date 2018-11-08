@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>PC Master Race</title>
+  <link rel="stylesheet" type="text/css" href="../view/stylemain_page.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <?php  include('../view/header_include.view.php') ?>
+
+  <!-- CONTENU -->
+  <h2>ACCUEIL</h2>
+  <div id="MAIN_CONTAINER">
+      <form class="" action="../controler/connexion.ctrl.php" method="post">
+        <fieldset>
+        <legend>Modification compte</legend>
+          email :<br>
+          <input type="hidden" name="act" value="mod">
+          <input type="email" required name="email" value="<?=$user->email?>"><br>
+          mot de passe :<br>
+          <input type="password" required name="password" value="<?=$user->password?>"><br>
+          confirmation du mot de passe : <br>
+          <input type="password" required name="passwordVerif" value="<?=$user->password?>"><br>
+          nom : <br>
+          <input type="text" required name="nom" value="<?=$user->nom?>"><br>
+          prenom : <br>
+          <input type="text" required name="prenom" value="<?=$user->prenom?>"><br>
+          <input type="submit" value="Terminer">
+        </fieldset>
+      </form>
+  </div>
+
+  <!-- FOOTER -->
+  <?php  include('../view/footer_include.view.php') ?>
+</body>
+</html>

@@ -11,15 +11,18 @@
       <img src="../view/images/search.svg" alt="Rechercher un jeu vidéo en particulier"> -->
 
         <form action="../controler/main.ctrl.php">
-          <input type="text" placeholder="Rechercher (5 caractères min)" name="search">
+          <input type="text" placeholder="Rechercher" name="search">
           <button type="submit"><img src="../view/images/recherche.svg" alt="Rechercher un jeu"></button>
         </form>
 
     </div>
-
-
-    <div>
-      <a href="../controler/panier.ctrl.php">  <img src="../view/images/panier.svg" alt="Panier Utilisateur"></a>
+    <div class="">
+      <?php if (!isset($user)) { ?>
+        <a href="../controler/connexion.ctrl.php">connexion</a>
+      <?php } else {?>
+        <a href="../controler/connexion.ctrl.php">Mon compte</a>
+      <?php } ?>
+        <a href="../controler/panier.ctrl.php">  <img src="../view/images/panier.svg" alt="Panier Utilisateur"></a>
     </div>
 
   </div>

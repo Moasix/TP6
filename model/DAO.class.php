@@ -2,6 +2,7 @@
 
     require_once("../model/Categorie.class.php");
     require_once("../model/Jeu.class.php");
+    require_once("../model/user.class.php");
 
     // Creation de l'unique objet DAO
     $dao = new DAO();
@@ -72,7 +73,6 @@
             ///////////////////////////////////////////////
             $b = $this->db->query("SELECT ref FROM article where ref > $ref  LIMIT 1");
             $array = $b->fetchAll(PDO::FETCH_ASSOC);
-var_dump($array);
             if(count($array) != 0){
               return $array[0]['ref'];
             }else{
@@ -109,6 +109,39 @@ var_dump($array);
             ///////////////////////////////////////////////////////
             return array();
         }
+
+////////////////////////////utilisateurs
+
+
+        function getIdUser(string $email, string $password ) : Int {
+          $b = $this->db->query("SELECT id, password FROM users where email == '$email'");
+          $res = $b->Fetch(PDO::FETCH_ASSOC);
+          if(!empty($res) && password_verify($password , $res['password'])){
+            return($res['id']);
+          }else{
+            return -1;
+          }
+        }
+        function emailDispo(string $email) : Boolean {
+          $b = $this->db->query("SELECT * FROM users where email == '$email'");
+          $res = $b->Fetch(PDO::FETCH_ASSOC);
+          return (empty($res));
+        }
+
+        function getUser(int $id) : User {
+          $b = $this->db->query("SELECT * FROM users where id == $id");
+          $array = $b->fetchAll(PDO::FETCH_CLASS, 'User');
+          return $array[0];
+        }
+
+        function addUser(User $user) {
+          $this->db->query("INSERT INTO users VALUES (SELECT id FROM users order by id desc limit 1)+1, '$user->email', '$user->password', 0, '$user->nom', '$user->prenom'");
+        }
+
+        function modUser(User $user) {
+          $this->db->query("UPDATE users set email = '$user->email', password = '$user->password',nom = '$user->nom', prenom = '$user->prenom' WHERE id == $user->id");
+        }
+
 
     }
 
