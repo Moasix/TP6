@@ -7,5 +7,12 @@ class User {
   public $type;
   public $nom;
   public $prenom;
+
+  public function __sleep()
+  {
+    return array('id','email','password','type','nom','prenom');
   }
+
+  }
+
   ?>

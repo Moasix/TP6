@@ -1,7 +1,8 @@
 <?php
 //Page d'accueil du site
-session_start();
 require_once('../model/DAO.class.php');
+session_start();
+
 
 /////////////////////////////////
 //// RECUPERATION DES DONNEES

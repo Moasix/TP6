@@ -1,8 +1,8 @@
 <?php
 //Page d'accueil du site
-session_start();
 require_once('../model/panier.class.php');
 require_once('../model/DAO.class.php');
+session_start();
 
 
 
@@ -17,8 +17,7 @@ if(isset($_SESSION['user'])){
 }
 
 if(isset($_GET['empty'])){
-  session_destroy();
-  session_start();
+  unset($_SESSION['panier']);
 }
 
 if(isset($_SESSION['panier'])){

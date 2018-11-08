@@ -12,6 +12,9 @@
   <!-- CONTENU -->
   <h2>ACCUEIL</h2>
   <div id="MAIN_CONTAINER">
+    <?php if ($erreur != ""): ?>
+      <p id="ERREUR">Erreur : <?=$erreur?>></p>
+    <?php endif; ?>
       <form class="" action="../controler/connexion.ctrl.php" method="post">
         <fieldset>
         <legend>Modification compte</legend>
@@ -29,6 +32,11 @@
           <input type="submit" value="Terminer">
         </fieldset>
       </form>
+      <p>
+        <form class="" action="../controler/connexion.ctrl.php" method="get">
+          <input type="submit" name="deco" value="Deconnexion">
+        </form>
+      </p>
   </div>
 
   <!-- FOOTER -->

@@ -13,6 +13,9 @@
   <h2>ACCUEIL</h2>
   <div id="MAIN_CONTAINER">
     <div>
+      <?php if ($erreur != ""): ?>
+        <p id="ERREUR">Erreur : <?=$erreur?></p>
+      <?php endif; ?>
       <form class="" action="../controler/connexion.ctrl.php" method="post">
         <fieldset>
           <legend>Connexion</legend>

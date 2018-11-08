@@ -1,6 +1,8 @@
 <?php
-session_start();
 require_once('../model/DAO.class.php');
+require_once('../model/user.class.php');
+session_start();
+
 
 $arrayCategorie  = $dao->getAllCat();
 $games = array();
@@ -8,6 +10,12 @@ if (isset($_GET['erreur'])) {
   $erreur=$_GET['erreur'];
 }else{
   $erreur = "";
+}
+
+if(isset($_GET['deco'])){
+  unset($_SESSION['user']);
+  header("Location: ../controler/main.ctrl.php");
+  exit();
 }
 
 if(isset($_POST['act'])){
@@ -21,15 +29,46 @@ if(isset($_POST['act'])){
       }
       else{
         header("Location: ../controler/connexion.ctrl.php?erreur=erreurConnexion");
+        exit();
       }
       break;
     case 'ins':
-      
-      if($dao->emailDispo())
+
+      if($dao->emailDispo($_POST['email'])){
+        if ($_POST['password'] == $_POST['passwordVerif']) {
+          $user = User();
+          $user->email = htmlentities($_POST['email']);
+          $user->password = password_hash(htmlentities($_POST['password']));
+          $user->nom = htmlentities($_POST['nom']);
+          $user->prenom = htmlentities($_POST['prenom']);
+          $dao->addUser($user);
+        }else{
+          header("Location: ../controler/connexion.ctrl.php?erreur=erreurPassword");
+          exit();
+        }
+      }else {
+        header("Location: ../controler/connexion.ctrl.php?erreur=erreurEmail");
+        exit();
+      }
 
       break;
     case 'mod': //modification
-      // code...
+        if($dao->emailDispo($_POST['email'])){
+          if ($_POST['password'] == $_POST['passwordVerif']) {
+            $user = User();
+            $user->email = htmlentities($_POST['email']);
+            $user->password = password_hash(htmlentities($_POST['password']));
+            $user->nom = htmlentities($_POST['nom']);
+            $user->prenom = htmlentities($_POST['prenom']);
+            $dao->addUser($user);
+          }else{
+            header("Location: ../controler/connexion.ctrl.php?erreur=erreurPassword");
+            exit();
+          }
+        }else {
+          header("Location: ../controler/connexion.ctrl.php?erreur=erreurEmail");
+          exit();
+        }
       break;
     default:
       // code...

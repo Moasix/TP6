@@ -14,6 +14,9 @@
   <div id="MAIN_CONTAINER">
     <?php if(isset($user) && ($user->type == 1)){ ?>
       <p>pouvoir faire des inserts</p>
+      <form class="" action="../controler/connexion.ctrl.php" method="get">
+        <input type="submit" name="deco" value="Deconnexion">
+      </form>
     <?php }else{ ?>
       <p>forbidden</p>
     <?php } ?>
