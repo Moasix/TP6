@@ -124,10 +124,10 @@ header nav ul {
     margin-top: 0px;
 }
 
-
 #MAIN_CONTAINER article div img {
     height: 20px;
     width: 20px;
+    margin: 0px;
   }
 
   #MAIN_CONTAINER article div a {

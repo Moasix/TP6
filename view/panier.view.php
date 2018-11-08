@@ -40,9 +40,8 @@
         </div>
       </article>
     <?php } ?>
-    <p>Total : <?=$panier->getTotal()?></p>
-
   </div>
+      <p>Total : <?=$panier->getTotal()?>€</p>
   <p>
     <form class="" action="../controler/panier.ctrl.php" method="get">
       <button type="submit" name="empty">vider le panier</button>

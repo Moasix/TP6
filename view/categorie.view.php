@@ -20,6 +20,10 @@
           <img src="../data/covers/<?=$value->image?>" alt="">
         </a>
         <p>Prix : <?=$value->prix?> €</p>
+        <form class="" action="../controler/panier.ctrl.php?act=add&" method="get">
+          <input type="hidden" name="act" value="add"/>
+          <button type="submit" name="ref" value=<?=$value->ref?>> ajouter au panier</button>
+        </form>
       </article>
     <?php } ?>
 
