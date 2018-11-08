@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>PC Master Race</title>
-  <link rel="stylesheet" type="text/css" href="../view/stylemain_page.css" />
+  <link rel="stylesheet" type="text/css" href="../view/stylepanier.css" />
 </head>
 <body>
   <!-- HEADER -->
@@ -21,10 +21,23 @@
           <img src="../data/covers/<?=$jeu->image?>" alt="">
         </a>
         <p>Prix : <?=$jeu->prix?> €</p>
-        <p>Quantite : <?=$value->quantite?> </p>
-        <a href="../controler/panier.ctrl.php/?act=sup&ref=<?=$jeu->ref?>">
-          <img src="" alt="supprimer">
-        </a>
+        <div>
+          <p>Quantité :</p>
+          <form class="" action="../controler/panier.ctrl.php" method="get">
+            <input type="hidden" name="ref" value="<?=$jeu->ref?>">
+            <input type="hidden" name="act" value="add">
+            <input type="number" name="qtt" value="<?=$value->quantite?>" min="0">
+          </form>
+          <a href="../controler/panier.ctrl.php?act=add&ref=<?=$jeu->ref?>">
+            <img src="../view/images/plus.png" alt="+">
+          </a>
+          <a href="../controler/panier.ctrl.php?act=rem&ref=<?=$jeu->ref?>">
+            <img src="../view/images/moins.png" alt="-">
+          </a>
+          <a href="../controler/panier.ctrl.php?act=sup&ref=<?=$jeu->ref?>">
+            <img src="../view/images/supprimer.png" alt="supprimer">
+          </a>
+        </div>
       </article>
     <?php } ?>
     <p>Total : <?=$panier->getTotal()?></p>

@@ -21,10 +21,15 @@
 
     function addJeuPanier(int $ref, int $quantite) {
       if (array_key_exists($ref, $this->articles)) {
-        $this->articles[$ref]->quantite ++;
+        if($quantite == 1){
+            $this->articles[$ref]->quantite ++;
+        }else{
+            $this->articles[$ref]->quantite = $quantite;
+        }
       } else{
         $this->articles[$ref] = new Article($ref,$quantite);
       }
+
     }
 
     function getTotal() : float {
@@ -35,6 +40,7 @@
       }
       return $s;
     }
+
 
     public function __sleep()
     {

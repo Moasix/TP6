@@ -12,11 +12,10 @@
       <?= $jeu->prix?>€
       <p><?= $jeu->description?></p>
       <p>
-        <form class="" action="../controler/panier.ctrl.php/?act=add&" method="get">
+        <form class="" action="../controler/panier.ctrl.php?act=add&" method="get">
           <input type="hidden" name="act" value="add"/>
           <button type="submit" name="ref" value=<?=$jeu->ref?>> ajouter au panier</button>
         </form>
-
       </p>
     </body>
 </html>
