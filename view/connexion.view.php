@@ -14,7 +14,7 @@
   <div id="MAIN_CONTAINER">
     <div>
       <?php if ($erreur != ""): ?>
-        <p id="ERREUR">Erreur : <?=$erreur?></p>
+        <p id="ERREUR"> Erreur : <?=$erreur?></p>
       <?php endif; ?>
       <form class="" action="<?="../controler/connexion.ctrl.php?".http_build_query($_GET)?>" method="post">
         <fieldset>

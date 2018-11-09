@@ -9,13 +9,13 @@ $games = array();
 if (isset($_GET['erreur'])) {
   switch ($_GET['erreur']) {
     case 'erreurPassword':
-      $erreur = "Erreur : les mots de passe ne correspondent pas";
+      $erreur = "les mots de passe ne correspondent pas";
       break;
     case 'erreurConnexion':
-      $erreur = "Erreur : Mauvais identifiants";
+      $erreur = "Mauvais identifiants";
       break;
     case 'erreurEmail':
-      $erreur = "Erreur : adresse email déja utilisée";
+      $erreur = "adresse email déja utilisée";
       break;
     default :
       break;
