@@ -32,8 +32,8 @@ if(isset($_POST['act'])){
         exit();
       }
       break;
-    case 'ins':
 
+    case 'ins': //Inscription
       if($dao->emailDispo($_POST['email'])){
         if ($_POST['password'] == $_POST['passwordVerif']) {
           $user = new User;
@@ -85,11 +85,8 @@ if(isset($_POST['act'])){
         }
       break;
     default:
-      // code...
       break;
   }
-  //header("Location: ../controler/connexion.ctrl.php");
-  //exit();
 }
 
 

@@ -61,55 +61,6 @@
         }
 
 
-
-
-
-
-
-
-        function next(int $ref) : int {
-            ///////////////////////////////////////////////////////
-            //  A COMPLETER
-            ///////////////////////////////////////////////
-            $b = $this->db->query("SELECT ref FROM article where ref > $ref  LIMIT 1");
-            $array = $b->fetchAll(PDO::FETCH_ASSOC);
-            if(count($array) != 0){
-              return $array[0]['ref'];
-            }else{
-              return 0;
-            }
-        }
-
-        // Acces aux n articles qui précèdent de $n la référence $ref dans l'ordre des références
-        function prevN(int $ref,int $n): array {
-          $b = $this->db->query("SELECT * FROM article where ref < $ref order by ref desc limit $n");
-          $array = $b->fetchAll(PDO::FETCH_CLASS, 'Article');
-          $arr1 = $array;
-          foreach ($arr1 as $key => $value) {
-            $array[$n-$key-1] = $value;
-          }
-          var_dump($array);
-          return $array;
-        }
-
-
-
-        // Acces à une catégorie
-        // Retourne un objet de la classe Categorie connaissant son identifiant
-
-
-
-
-
-        // Acces au n articles à partir de la reférence $ref
-        // Retourne une table d'objets de la classe Article
-        function getNCateg(int $ref,int $n,string $categorie) : array {
-            ///////////////////////////////////////////////////////
-            //  A COMPLETER
-            ///////////////////////////////////////////////////////
-            return array();
-        }
-
 ////////////////////////////utilisateurs
 
 
@@ -135,8 +86,6 @@
         }
 
         function addUser(User $user) {
-          //$this->db->exec("INSERT INTO users VALUES (SELECT id FROM users order by id desc limit 1)+1, '$user->email', '$user->password', 0, '$user->nom', '$user->prenom'");
-
           $id = $this->db->query("SELECT id FROM users order by id desc limit 1")->fetch(PDO::FETCH_ASSOC)['id']+1;
           $sql = "INSERT INTO users (id,email,password,type,nom,prenom) VALUES (?,?,?,?,?,?)";
           $stmt = $this->db->prepare($sql);

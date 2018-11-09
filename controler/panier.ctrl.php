@@ -3,9 +3,6 @@
 require_once('../model/panier.class.php');
 require_once('../model/DAO.class.php');
 session_start();
-
-
-
 /////////////////////////////////
 //// RECUPERATION DES DONNEES
 /////////////////////////////////

@@ -3,11 +3,6 @@
 require_once('../model/DAO.class.php');
 session_start();
 
-
-/////////////////////////////////
-//// RECUPERATION DES DONNEES
-/////////////////////////////////
-
 $arrayCategorie  = $dao->getAllCat();
 $games = array();
 
@@ -39,13 +34,7 @@ else if(isset($_GET['ref'])){
   include_once("../view/jeu.view.php");
 }
 else {
-  $games = $dao->getNjeu(0,10);
+  $games = $dao->getAlljeux();
   include_once("../view/main_page.view.php");
 }
-
-
-/////////////////////////////////
-//// APPEL A LA VUE
-/////////////////////////////////
-
  ?>
