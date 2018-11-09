@@ -10,7 +10,7 @@
   <?php  include('../view/header_include.view.php') ?>
 
   <!-- CONTENU -->
-  <h2>ACCUEIL</h2>
+  <h2>ADMIN</h2>
   <div id="MAIN_CONTAINER">
     <?php if(isset($user) && ($user->type == 1)){ ?>
       <p>peg de l'admin admin</p>

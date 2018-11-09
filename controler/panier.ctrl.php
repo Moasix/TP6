@@ -51,15 +51,13 @@ if(isset($_GET['act'])){
 }
 
 if(isset($_GET['commander'])){
-  print"aaaaaaaa";
-
   if($panier->getTotal() != 0){
     if(isset($_SESSION['user'])){
       $user = $_SESSION['user'];
       header("Location: ../controler/panier.ctrl.php?commande&empty");
       exit();
     }else{
-      header("Location: ../controler/connexion.ctrl.php");
+      header("Location: ../controler/connexion.ctrl.php?commande");
       exit();
     }
   }else{

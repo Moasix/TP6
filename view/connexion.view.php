@@ -16,7 +16,7 @@
       <?php if ($erreur != ""): ?>
         <p id="ERREUR">Erreur : <?=$erreur?></p>
       <?php endif; ?>
-      <form class="" action="../controler/connexion.ctrl.php" method="post">
+      <form class="" action="<?="../controler/connexion.ctrl.php?".http_build_query($_GET)?>" method="post">
         <fieldset>
           <legend>Connexion</legend>
           <input type="hidden" name="act" value="con">
@@ -29,7 +29,7 @@
       </form>
     </div>
     <div>
-      <form class="" action="../controler/connexion.ctrl.php" method="post">
+      <form class="" action="<?="../controler/connexion.ctrl.php?".http_build_query($_GET)?>" method="post">
         <fieldset>
         <legend>Inscription</legend>
           nom : <br>
