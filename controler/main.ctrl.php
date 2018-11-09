@@ -17,7 +17,7 @@ if(isset($_SESSION['user'])){
 
 //recherche
 if(isset($_GET['search']) && strlen($_GET['search']) >= 3){
-  $search = $_GET['search'];
+  $search = htmlentities($_GET['search']);
     foreach ($dao->getAllJeux() as $key => $value) {
       $substr = substr($value->titre, 0 , strlen($search));
       $lev = levenshtein($substr, $search);
