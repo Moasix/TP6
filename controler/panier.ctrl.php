@@ -51,17 +51,19 @@ if(isset($_GET['act'])){
 }
 
 if(isset($_GET['commander'])){
-  if($_SESSION['panier']->getTotal > 0){
+  print"aaaaaaaa";
+
+  if($panier->getTotal() != 0){
     if(isset($_SESSION['user'])){
       $user = $_SESSION['user'];
-      header('Location : panier.ctrl.php?commande&empty');
+      header("Location: ../controler/panier.ctrl.php?commande&empty");
       exit();
     }else{
-      header('Location : connexion.ctrl.php?commande');
+      header("Location: ../controler/connexion.ctrl.php");
       exit();
     }
   }else{
-    header('Location : panier.ctrl.php?erreurCommande');
+    header("Location: ../controler/panier.ctrl.php?erreurCommande");
     exit();
   }
 }
