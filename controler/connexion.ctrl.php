@@ -7,7 +7,19 @@ session_start();
 $arrayCategorie  = $dao->getAllCat();
 $games = array();
 if (isset($_GET['erreur'])) {
-  $erreur=$_GET['erreur'];
+  switch ($_GET['erreur']) {
+    case 'erreurPassword':
+      $erreur = "Erreur : les mots de passe ne correspondent pas"
+      break;
+    case 'erreurConnexion':
+      $erreur = "Erreur : Mauvais identifiants"
+      break;
+    case 'erreurEmail':
+      $erreur = "Erreur : adresse email déja utilisée"
+      break;
+    default :
+      break;
+  }
 }else{
   $erreur = "";
 }
@@ -24,11 +36,19 @@ if(isset($_POST['act'])){
       $idUser = $dao->getIdUser(htmlentities($_POST['email']),  htmlentities($_POST['password']));
       if($idUser > 0){
         $_SESSION['user'] = $dao->getUser($idUser);
-        header("Location: ../controler/connexion.ctrl.php");
+        if(isset($_GET['commande'])){
+          header("Location: ../controler/panier.ctrl.php?commande&empty");
+        } else{
+          header("Location: ../controler/connexion.ctrl.php");
+        }
         exit();
       }
       else{
-        header("Location: ../controler/connexion.ctrl.php?erreur=erreurConnexion");
+        if(isset($_GET['commande'])){
+          header("Location: ../controler/connexion.ctrl.php?erreur=erreurConnexion&commande&empty");
+        } else{
+          header("Location: ../controler/connexion.ctrl.php?erreur=erreurConnexion");
+        }
         exit();
       }
       break;
@@ -45,15 +65,27 @@ if(isset($_POST['act'])){
           $idUser = $dao->getIdUser(htmlentities($_POST['email']),  htmlentities($_POST['password']));
           if($idUser > 0){
             $_SESSION['user'] = $dao->getUser($idUser);
-            header("Location: ../controler/connexion.ctrl.php");
+            if(isset($_GET['commande'])){
+              header("Location: ../controler/panier.ctrl.php?commande&empty");
+            } else{
+              header("Location: ../controler/connexion.ctrl.php");
+            }
             exit();
           }
         }else{
-          header("Location: ../controler/connexion.ctrl.php?erreur=erreurPassword");
+          if(isset($_GET['commande'])){
+            header("Location: ../controler/connexion.ctrl.php?erreur=erreurPassword&commande");
+          } else{
+            header("Location: ../controler/connexion.ctrl.php?erreur=erreurPassword");
+          }
           exit();
         }
       }else {
-        header("Location: ../controler/connexion.ctrl.php?erreur=erreurEmail");
+        if(isset($_GET['commande'])){
+          header("Location: ../controler/connexion.ctrl.php?erreur=erreurEmail&commande");
+        } else{
+          header("Location: ../controler/connexion.ctrl.php?erreur=erreurEmail");
+        }
         exit();
       }
 

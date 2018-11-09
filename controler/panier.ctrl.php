@@ -13,6 +13,12 @@ if(isset($_SESSION['user'])){
   $user = $_SESSION['user'];
 }
 
+if(isset($_GET['commande'])){
+  $message = 'Commande validée';
+}else if(isset($_GET['erreurCommande'])){
+  $message = 'Impossible de commander : Aucun article dans le panier';
+}
+
 if(isset($_GET['empty'])){
   unset($_SESSION['panier']);
 }
@@ -44,8 +50,21 @@ if(isset($_GET['act'])){
   exit();
 }
 
-$_SESSION['panier'] = serialize($panier);
-
+if(isset($_GET['commander'])){
+  if($_SESSION['panier']->getTotal > 0){
+    if(isset($_SESSION['user'])){
+      $user = $_SESSION['user'];
+      header('Location : panier.ctrl.php?commande&empty');
+      exit();
+    }else{
+      header('Location : connexion.ctrl.php?commande');
+      exit();
+    }
+  }else{
+    header('Location : panier.ctrl.php?erreurCommande');
+    exit();
+  }
+}
 
 include_once("../view/panier.view.php");
 ?>

@@ -43,8 +43,16 @@
   </div>
 
   <div id="Achat">
+    <?php
+      if(isset($message)){
+        print "<p>$message</p>";
+      }
+     ?>
     <p>Total : <?=$panier->getTotal()?>€</p>
     <p>
+      <form class="" action="../controler/panier.ctrl.php" method="get">
+        <button type="submit" name="commander">commander</button>
+      </form>
       <form class="" action="../controler/panier.ctrl.php" method="get">
         <button type="submit" name="empty">vider le panier</button>
       </form>

@@ -13,7 +13,7 @@
   <h2>ACCUEIL</h2>
   <div id="MAIN_CONTAINER">
     <?php if(isset($user) && ($user->type == 1)){ ?>
-      <p>pouvoir faire des inserts</p>
+      <p>peg de l'admin admin</p>
       <form class="" action="../controler/connexion.ctrl.php" method="get">
         <input type="submit" name="deco" value="Deconnexion">
       </form>
