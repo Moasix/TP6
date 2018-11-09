@@ -3,12 +3,11 @@
   <div id="ContainerHeader">
 
     <div>
-      <a href="../controler/main.ctrl.php">  <img src="../view/images/adibou_master_race.gif" alt="Logo de PC Master Race"></a>
+      <a href="../controler/main.ctrl.php">  <img src="../view/images/pcMasterRace.png" alt="Logo de PC Master Race"></a>
+      <h1>PC MASTER RACE</h1>
     </div>
 
     <div>
-      <!-- <input type="text" name="search" value="" placeholder="abricot" >
-      <img src="../view/images/search.svg" alt="Rechercher un jeu vidéo en particulier"> -->
 
         <form action="../controler/main.ctrl.php">
           <input type="text" placeholder="Rechercher" name="search">

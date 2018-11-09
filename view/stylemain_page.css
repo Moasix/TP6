@@ -2,29 +2,42 @@ body{
   font-family: Arial, sans-serif;
   width:90%;
   margin: auto;
-  }
-
-h1{
-    font-variant:small-caps;
-  	text-align:center;
-    font-weight: normal;
-    color: #E16A72; /* rose */
+  background-color: lightgrey;
   }
 
 
 /* HEADER */
 header>div{
-  background-color: aqua;
+  background-color: grey;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100px;
+
+  border-left: 4px solid #e1951f; /* gold */
+  border-right: 4px solid #e1951f; /* gold */
+  border-bottom: 4px solid #e1951f; /* gold */
+}
+
+header div div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header div div:first-child img {
   height: 100px;
   width: 100px;
 }
+
+header div div:first-child h1{
+    font-variant:small-caps;
+  	text-align:center;
+    font-weight: bold;
+    color: #e1951f; /* gold */
+    /* margin: 0px;
+    padding: 0px; */
+  }
 
 header div div:nth-child(2) input[type=text] {
   padding: 6px;
@@ -33,16 +46,16 @@ header div div:nth-child(2) input[type=text] {
   border: none;
 }
 
-header div div:nth-child(2) button {
+  header div div:nth-child(2) button {
   float: right;
-padding: 6px 10px;
-margin-top: 8px;
-margin-right: 16px;
-background: #ddd;
-font-size: 17px;
-border: none;
-cursor: pointer;
-}
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  }
 
 header div div:nth-child(2) button {
   background: #ccc;
@@ -54,9 +67,16 @@ header div div:nth-child(2) img {
   width: 17px;
 }
 
+header div div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header div div:last-child img {
   height: 50px;
   width: 50px;
+  margin-right: 10px;
 }
 
 header nav ul {
@@ -72,13 +92,23 @@ header nav ul {
 
   ul li a{
     	text-decoration:none;
-      background-color: #E16A72;
+      background-color:  #e1951f; /* gold */
       color: white;
     	border: 1px solid white;
       margin-left: -1px; /* pour enlever la double bordure*/
     	padding:0.5em;
     	display: inline-block;
     }
+
+    ul li a:hover{
+      	text-decoration:none;
+        background-color: #a2230f; /* gold */
+        color: white;
+      	border: 1px solid white;
+        margin-left: -1px; /* pour enlever la double bordure*/
+      	padding:0.5em;
+      	display: inline-block;
+      }
 
 
 
@@ -132,14 +162,22 @@ header nav ul {
 
 
 footer {
-  background-color: #971011;
+  background-color: grey;
   display: flex;
   align-items: center;
   margin-top: 20px;
+  padding-left: 10px;
+  height: 100px;
+
+  border-top: 4px solid #e1951f; /* gold */
+  border-left: 4px solid #e1951f; /* gold */
+  border-right: 4px solid #e1951f; /* gold */
+  border-bottom: 4px solid #e1951f; /* gold */
 }
 
 footer img {
 
   height: 100px;
   width: 100px;
+  margin-top: 2px;
 }

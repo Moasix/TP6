@@ -10,7 +10,7 @@
   <?php  include('../view/header_include.view.php') ?>
 
   <!-- CONTENU -->
-  <h2>ACCUEIL</h2>
+  <h2>FORMULAIRE</h2>
   <div id="MAIN_CONTAINER">
     <div>
       <?php if ($erreur != ""): ?>

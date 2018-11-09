@@ -41,12 +41,16 @@
       </article>
     <?php } ?>
   </div>
-      <p>Total : <?=$panier->getTotal()?>€</p>
-  <p>
-    <form class="" action="../controler/panier.ctrl.php" method="get">
-      <button type="submit" name="empty">vider le panier</button>
-    </form>
-  </p>
+
+  <div id="Achat">
+    <p>Total : <?=$panier->getTotal()?>€</p>
+    <p>
+      <form class="" action="../controler/panier.ctrl.php" method="get">
+        <button type="submit" name="empty">vider le panier</button>
+      </form>
+    </p>
+  </div>
+
   <!-- FOOTER -->
   <?php  include('../view/footer_include.view.php') ?>
 </body>
