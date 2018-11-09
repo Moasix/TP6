@@ -56,11 +56,16 @@ if(isset($_POST['act'])){
         if($dao->emailDispo($_POST['email'])){
           if ($_POST['password'] == $_POST['passwordVerif']) {
             $user = User();
+            $user->id = $_SESSION['user']->id;
+            if($_POST['password'] != ""){
+              $user->password = password_hash(htmlentities($_POST['password']));
+            }else{
+              $user->password = $_SESSION['password'];
+            }
             $user->email = htmlentities($_POST['email']);
-            $user->password = password_hash(htmlentities($_POST['password']));
             $user->nom = htmlentities($_POST['nom']);
             $user->prenom = htmlentities($_POST['prenom']);
-            $dao->addUser($user);
+            $dao->modUser($user);
           }else{
             header("Location: ../controler/connexion.ctrl.php?erreur=erreurPassword");
             exit();

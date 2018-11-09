@@ -32,17 +32,17 @@
       <form class="" action="../controler/connexion.ctrl.php" method="post">
         <fieldset>
         <legend>Inscription</legend>
-          <input type="hidden" name="act" value="ins">
-          email :<br>
-          <input type="email" required name="email" value=""><br>
-          mot de passe :<br>
-          <input type="password" required name="password" value=""><br>
-          confirmation du mot de passe : <br>
-          <input type="password" required name="passwordVerif" value=""><br>
           nom : <br>
           <input type="text" required name="nom" value=""><br>
           prenom : <br>
           <input type="text" required name="prenom" value=""><br>
+          <input type="hidden" name="act" value="ins">
+          email :<br>
+          <input type="email" required name="email" value=""><br>
+          mot de passe :<br>
+          <input type="password" required minlengh = 8 name="password" value=""><br>
+          confirmation du mot de passe : <br>
+          <input type="password" required name="passwordVerif" value=""><br>
           <input type="submit" value="Terminer">
         </fieldset>
       </form>
