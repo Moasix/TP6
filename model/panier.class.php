@@ -19,7 +19,7 @@
         return $res;
     }
 
-    function addJeuPanier(int $ref, int $quantite) {
+    function addJeuPanier(int $ref, int $quantite = 1) {
       if (array_key_exists($ref, $this->articles)) {
         if($quantite == 1){
             $this->articles[$ref]->quantite ++;
