@@ -22,7 +22,7 @@ if(isset($_POST['act'])){
   switch ($_POST['act']) {
     case 'con': //connexion
       $idUser = $dao->getIdUser(htmlentities($_POST['email']),  htmlentities($_POST['password']));
-      if($idUser >0){
+      if($idUser > 0){
         $_SESSION['user'] = $dao->getUser($idUser);
         header("Location: ../controler/connexion.ctrl.php");
         exit();
@@ -36,12 +36,18 @@ if(isset($_POST['act'])){
 
       if($dao->emailDispo($_POST['email'])){
         if ($_POST['password'] == $_POST['passwordVerif']) {
-          $user = User();
+          $user = new User;
           $user->email = htmlentities($_POST['email']);
-          $user->password = password_hash(htmlentities($_POST['password']));
+          $user->password = password_hash(htmlentities($_POST['password']), PASSWORD_DEFAULT);
           $user->nom = htmlentities($_POST['nom']);
           $user->prenom = htmlentities($_POST['prenom']);
           $dao->addUser($user);
+          $idUser = $dao->getIdUser(htmlentities($_POST['email']),  htmlentities($_POST['password']));
+          if($idUser > 0){
+            $_SESSION['user'] = $dao->getUser($idUser);
+            header("Location: ../controler/connexion.ctrl.php");
+            exit();
+          }
         }else{
           header("Location: ../controler/connexion.ctrl.php?erreur=erreurPassword");
           exit();
@@ -53,12 +59,12 @@ if(isset($_POST['act'])){
 
       break;
     case 'mod': //modification
-        if($dao->emailDispo($_POST['email'])){
+        if($_POST['email'] == $_SESSION['user']->email || $dao->emailDispo($_POST['email'])){
           if ($_POST['password'] == $_POST['passwordVerif']) {
-            $user = User();
+            $user = new User;
             $user->id = $_SESSION['user']->id;
             if($_POST['password'] != ""){
-              $user->password = password_hash(htmlentities($_POST['password']));
+              $user->password = password_hash(htmlentities($_POST['password']), PASSWORD_DEFAULT);
             }else{
               $user->password = $_SESSION['password'];
             }
@@ -66,6 +72,9 @@ if(isset($_POST['act'])){
             $user->nom = htmlentities($_POST['nom']);
             $user->prenom = htmlentities($_POST['prenom']);
             $dao->modUser($user);
+            $_SESSION['user'] = $dao->getUser($_SESSION['user']->id);
+            header("Location: ../controler/connexion.ctrl.php");
+            exit();
           }else{
             header("Location: ../controler/connexion.ctrl.php?erreur=erreurPassword");
             exit();

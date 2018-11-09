@@ -25,10 +25,10 @@
           <input type="text" required name="prenom" value="<?=$user->prenom?>"><br>
           email :<br>
           <input type="email" required name="email" value="<?=$user->email?>"><br>
-          mot de passe :<br>
-          <input type="password" required minlengh = 8 name="password" value=""><br>
-          confirmation du mot de passe : <br>
-          <input type="password" required name="passwordVerif" value=""><br>
+          Nouveau mot de passe :<br>
+          <input type="password"  minlengh = "8" name="password" value=""><br>
+          Confirmation du mot de passe : <br>
+          <input type="password"  name="passwordVerif" value=""><br>
           <input type="submit" value="Terminer">
         </fieldset>
       </form>

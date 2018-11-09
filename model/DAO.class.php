@@ -135,7 +135,12 @@
         }
 
         function addUser(User $user) {
-          $this->db->exec("INSERT INTO users VALUES (SELECT id FROM users order by id desc limit 1)+1, '$user->email', '$user->password', 0, '$user->nom', '$user->prenom'");
+          //$this->db->exec("INSERT INTO users VALUES (SELECT id FROM users order by id desc limit 1)+1, '$user->email', '$user->password', 0, '$user->nom', '$user->prenom'");
+
+          $id = $this->db->query("SELECT id FROM users order by id desc limit 1")->fetch(PDO::FETCH_ASSOC)['id']+1;
+          $sql = "INSERT INTO users (id,email,password,type,nom,prenom) VALUES (?,?,?,?,?,?)";
+          $stmt = $this->db->prepare($sql);
+          $stmt->execute([$is,$user->email,$user->password,0,$user->nom,$user->prenom]);
         }
 
         function modUser(User $user) {
