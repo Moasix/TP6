@@ -122,7 +122,7 @@
             return -1;
           }
         }
-        function emailDispo(string $email) : Boolean {
+        function emailDispo(string $email) : bool {
           $b = $this->db->query("SELECT * FROM users where email == '$email'");
           $res = $b->Fetch(PDO::FETCH_ASSOC);
           return (empty($res));
@@ -135,11 +135,11 @@
         }
 
         function addUser(User $user) {
-          $this->db->query("INSERT INTO users VALUES (SELECT id FROM users order by id desc limit 1)+1, '$user->email', '$user->password', 0, '$user->nom', '$user->prenom'");
+          $this->db->exec("INSERT INTO users VALUES (SELECT id FROM users order by id desc limit 1)+1, '$user->email', '$user->password', 0, '$user->nom', '$user->prenom'");
         }
 
         function modUser(User $user) {
-          $this->db->query("UPDATE users set email = '$user->email', password = '$user->password',nom = '$user->nom', prenom = '$user->prenom' WHERE id == $user->id");
+          $this->db->exec("UPDATE users set email = '$user->email', password = '$user->password',nom = '$user->nom', prenom = '$user->prenom' WHERE id == $user->id");
         }
 
 
